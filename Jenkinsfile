@@ -14,7 +14,8 @@ pipeline {
         }
         stage('Security Check') {
             steps {
-                echo 'Run the security check against the application' 
+                echo 'Run the security check against the application'
+                echo 'Checking for any unauthorized access'
             }
         }
         stage('Run Unit Tests') {
