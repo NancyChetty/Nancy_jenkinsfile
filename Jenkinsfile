@@ -4,6 +4,7 @@ pipeline {
         stage('Static Analysis') {
             steps {
                 echo 'Run the static analysis to the code' 
+                echo 'Hello there! Im Nancy'
             }
         }
         stage('Compile') {
@@ -14,7 +15,6 @@ pipeline {
         stage('Security Check') {
             steps {
                 echo 'Run the security check against the application' 
-                echo 'Hello there! Im Nancy'
             }
         }
         stage('Run Unit Tests') {
